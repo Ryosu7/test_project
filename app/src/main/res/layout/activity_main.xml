@@ -9,9 +9,18 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:id="@+id/page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="#0000FF"
+        />
+
     <TextView
         android:id="@+id/dataBindingEx"
         android:textSize="50sp"
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -19,6 +28,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/yoon"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="match_parent"
+        tools:layout_editor_absoluteY="match_parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
